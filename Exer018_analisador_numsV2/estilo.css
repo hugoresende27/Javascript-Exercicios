@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    color: greenyellow;
+}
+
+section{
+    background-color: chartreuse;
+    width: 700px;
+    height: auto;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 30px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;       /*um bold */
+    font-size: 26px;
+    padding-top: 20px;
+}
+
+footer{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+
+div{
+    padding-top: 30px;
+    display: flex;          /*alinhar caixa no centro*/
+    justify-content: center;/*alinhar caixa no centro*/
+    color: blue;
+}
+
+select{
+    width: 150px;
+}
+
+div#res{
+    display:block;
+    text-align: center;
+    padding-bottom: 5px;
+}

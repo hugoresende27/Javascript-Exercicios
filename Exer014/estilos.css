@@ -1,0 +1,40 @@
+
+body{
+    background-color: black;
+    font: normal 16pt verdana;
+    color: greenyellow;
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    background-color: aqua;
+    color: black;
+    border-radius: 10px;   /*para criar uma caixa com bordas arredondadas e centrada*/         
+    padding: 55px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 15px 15px 10px white; /*sombra da caixa*/
+    line-height: 50px;
+
+}
+
+footer{
+    background-color: rgb(101, 67, 20);
+    border-radius: 20px;
+    padding: 5px;/*altura da caixa*/
+    margin: auto;/*centrado ao meio*/
+    width: 98%;/*largura*/
+    text-align: center; /*centra o texto*/
+    font-style: italic;
+    position: absolute;/*para ficar no fundo e centrado*/
+    bottom: 0%;
+
+}
+
+div{
+    text-align: center;
+}

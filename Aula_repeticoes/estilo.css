@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    color: rgb(238, 238, 236);
+}
+
+section{
+    background-color: rgb(43, 223, 19);
+    color:black;
+    font: bold;
+    border-radius: 10px;   /*para criar uma caixa com bordas arredondadas e centrada*/         
+    padding: auto;
+    width: 400px;
+    /*height: 100px;*/
+    margin: auto;
+    text-align: center;
+    box-shadow: 15px 15px 10px rgb(5, 88, 39); /*sombra da caixa*/
+    line-height: 30px;
+    padding-top: 20px;
+}
+h1{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: greenyellow;
+    }
+</style>
+<body>
+    <input type="text" name="n" id="n">
+    <input type="button" value="Pumbas!!!" onclick="ler()">
+    <div id="res">
+        <h1>zona de testes</h1>
+
+    </div>
+    
+</body>
+<script>
+    function ler(){
+        var n = window.document.getElementById("n")
+        //var num = Number(n.value)
+        var txt = String(n.value)
+        var r = window.document.getElementById("res")
+        r.innerHTML+=`</br> o valor q meteste é o ${txt}`
+    }
+</script>
+</html>

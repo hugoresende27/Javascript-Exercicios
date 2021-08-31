@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania</title>
+    <style>
+        body{
+            background-color: black;
+            color: chartreuse;
+        }
+        div{
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Seu teste de Cidadania</h2>
+    <div>
+       Qual o País ?</br> <input type="text" name="nac" id="nac">
+       &nbsp;&nbsp;&nbsp;<input type="button" value="Verifica" onclick="teste()">
+    </div>
+    <div id="res">
+
+
+    </div>
+    <script>
+        function teste(){
+                var nac=window.document.getElementById("nac")
+                var n = nac.value
+                var res = window.document.getElementById("res")
+                
+                if (n=="Portugal"){
+                    res.innerHTML=`Bem vindo Português`
+                }else{
+                    res.innerHTML=`Bem vindo cidadão do país ${n}`
+                }
+            }
+    </script>
+    
+</body>
+</html>

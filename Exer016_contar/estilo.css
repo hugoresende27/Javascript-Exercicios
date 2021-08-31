@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    color: rgb(238, 238, 236);
+}
+
+section{
+    background-color: rgb(43, 223, 19);
+    color:black;
+    font: bold;
+    border-radius: 10px;   /*para criar uma caixa com bordas arredondadas e centrada*/         
+    padding: 20px;
+    width: 300px;
+    /*height: 100px;*/
+    margin: auto;
+    text-align: left;
+    box-shadow: 15px 15px 10px rgb(5, 88, 39); /*sombra da caixa*/
+    line-height: 30px;
+    padding-top: 20px;
+}
+h1{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+p{
+    line-height: normal;
+    text-align: left;
+}
+
+div{
+    text-align: center;
+    color: rgb(54, 16, 221);
+    font-size: large;
+    font-style: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

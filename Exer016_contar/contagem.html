@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Contagem</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Contando....</h1>
+    <section>
+    
+        <table>
+            <tr>
+        <td>
+            Inicio &rArr;
+            <td>
+            <input type="number" name="inicio" id="inicio" placeholder="1">
+            </td>
+        </td>
+           
+        </tr>
+        <tr>
+        <td>
+            Fim &rArr;
+            <td>
+            <input type="number" name="fim" id="fim" min="1" placeholder="2">
+            </td>
+        </td>    
+        </tr>
+        <tr>
+        <td>
+            Paço &rArr;
+            <td>
+             <input type="number" name="paco" id="paco" min="2" >
+            </td>
+        </td>
+        </tr>
+
+            </tr>
+        </table>
+        
+        <input type="button" value="Contar..." onclick="contar()">
+        <input type="button" value="Limpar" onclick="limpar()">
+        <div id="info">
+            Fazendo a contagem...
+        </div>
+        <div id="contagem">
+        
+        </div>
+    
+    </section>
+    <footer>
+        @Hugo Resende Products @2021
+    </footer>
+</body>
+</html>

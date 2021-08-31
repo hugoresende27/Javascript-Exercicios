@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Verificador de idade</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Verificando a Idade</h1>
+    <section>
+        <p>Ano de Nascimento:&nbsp;<input type="number" name="ano" id="ano" min="0" max="2021"></p>
+        Sexo &dArr;
+        <p> 
+            <input type="radio" name="sexo" id="mas"> 
+            <label for="mas">Masculino</label>
+            <input type="radio" name="sexo" id="fem">
+            <label for="fem">Feminino</label>
+        </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verifica()">
+            </p>
+        <div id="msg">
+            Teste
+        </div>
+        <img id="img"> <!-- src="/Guanabara_JS1/Exer015_idade/img/1.png" alt="error"> -->
+    </section>
+    <footer>
+        @Hugo Resende Products @2021
+    </footer>
+</body>
+</html>

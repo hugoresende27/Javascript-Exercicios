@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    color: greenyellow;
+}
+
+section{
+    background-color: blue;
+    border-radius: 20px;
+    width: 600px;
+    height: 600px;
+    margin: auto;       /* para centrar a caixa*/
+    text-align: center;
+    padding-top: 10px;  /*baixar a primeira linha do texto*/
+}
+
+footer{
+    text-align: center;
+}
+

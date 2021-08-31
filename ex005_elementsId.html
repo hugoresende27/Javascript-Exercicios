@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5--DOM</title>
+    <style>
+        body{
+            background-color: black;
+            color:aliceblue;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="tit">Iniciando estudos com DOM</h1>
+    <p id = "outra">Aqui vai o resultado para mais um exercicio</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaSript</p>
+    <div id="msg">Clique me mim</div>
+    <p  id="mais">o que se passa?? </p>
+    <script>
+
+        window.document.write("Olá Hugo!!!</br>")
+        window.document.write(window.navigator.appName)
+        window.document.write("</br>"+window.document.URL)
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write("Está escrito assim "+p1.innerText)
+        document.write(p1.innerHTML)
+        //window.alert(p1.innerText)
+
+        var d= window.document.getElementById("msg")
+        d.style.background="Green"
+        d.innerText="Carregando ...."
+
+        var s=window.document.querySelector("h1.tit")
+        s.style.background="red"
+        var o = window.document.querySelector("p#outra")
+        o.style.background="blue"
+
+        var d = window.document.querySelector("p#mais").style.background="cyan"
+        
+
+    </script>
+    
+</body>
+</html>

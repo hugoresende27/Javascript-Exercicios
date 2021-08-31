@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de multas</title>
+    <style>
+        body{
+            background-color: black;
+            color: greenyellow;
+        }
+        div{
+            margin-top: 20px;
+            line-height: 100px;
+        }
+        .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+          }
+        .container {
+        height: 200px;
+        position: relative;
+        /*border: 3px solid green;*/
+          }
+        .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        }
+     
+    </style>
+</head>
+<body>
+    <h1>Multando....</h1>
+    
+   
+    <div class="center">
+        <ol type="A">
+            <li> Velocidade do Carro : <input type="number" name="vel" id="txtvel"> Km/h </li> 
+            <li>Velocidade do Carro 2: <input type="number" name="vel2" id="txtvel2"> Km/h</li>
+            <input type="button" value="Verificar" onclick="calcula()">
+        </ol>
+    </div>
+    <div id="res">
+
+    </div>
+       
+    
+    <script>
+        var txtv1 = window.document.getElementById("txtvel")
+        var txtv2 = window.document.getElementById("txtvel2")
+        //var txt = window.document.querySelector('input#txtvel')       usando o querySelector
+
+        function calcula(){
+            var vel1 =Number(txtv1.value)
+            var vel2= Number(txtv2.value)
+            var res = window.document.querySelector('div#res')
+            res.innerHTML=`<p>A sua velocidade actual é de Carro A <strong>${vel1}Km/h</strong> e do carro B <strong>${vel2}</strong>Km/h</p>`
+            if (vel1>60){
+                res.innerHTML+=`<p>Foste <strong>Multado Carro A !!!! `
+            }
+            if (vel2>60){
+                res.innerHTML+=`<p>O carro<strong> B</strong> foi Multado</p>`
+            }
+            res.innerHTML+=`Vai com cuidado !!!!` 
+        }
+    </script>
+</body>
+</html>
